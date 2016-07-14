@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batch_infos>
+	<req_system_code>01<req_system_code/>
+	<req_user_name>001<req_user_name/>
+	<req_user_password>1212<req_user_password/>
+	<req_batch_id>1<req_batch_id/>
+	<org_code>20051212<org_code/>
+    <inv_header>
+		<is_validate>Y<is_validate/>
+		<is_create_acc>Y<is_create_acc/>
+		<is_post_gl>Y<is_post_gl/>
+		<req_header_id>121<req_header_id/>
+		<invoice_type>标准<invoice_type/>
+		<invoice_num>111123122312<invoice_num/>
+		<invoice_date>2016-07-11<invoice_date/>
+		<vendor_num>121<vendor_num/>
+		<vendor_site_code>默认<vendor_site_code/>
+		<invoice_amount>1200<invoice_amount/>
+		<invoice_currency_code>CNY<invoice_currency_code/>
+		<terms_name>立即付款<terms_name/>
+		<pay_currency_code>CNY<pay_currency_code/>
+		<payment_method_code>电汇<payment_method_code/>
+		<invoice_desc>发票摘要<invoice_desc/>
+		<gl_date> 2016-07-12 <gl_date/>
+		<business_type> 工程款 <business_type/>
+		<fj_qty>1<fj_qty/>
+		<created_date>2016-07-12<created_date/>
+	    <inv_lines>
+			<line_num>1<line_num/>
+			<line_type>项目<line_type/>
+			<line_amount>1200<line_amount/>
+			<segment1>20006121<segment1/>
+			<segment2>0<segment2/>
+			<segment3>11010101<segment3/>
+			<segment4>0<segment4/>
+			<segment5>0<segment5/>
+			<segment6>0<segment6/>
+			<segment7>0<segment7/>
+			<segment8>0<segment8/>
+			<segment9>0<segment9/>
+			<project_code><project_code/>
+			<task_code><task_code/>
+			<exp_type_name><exp_type_name/>
+			<exp_org_name><exp_org_name/>
+			<exp_date><exp_date/>
+	    </inv_lines>
+     </inv_header>
+</batch_infos >
