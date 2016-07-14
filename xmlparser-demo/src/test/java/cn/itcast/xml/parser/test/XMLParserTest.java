@@ -49,14 +49,19 @@ public class XMLParserTest {
 	@Test
 	public void testOther() throws ConfigurationException {
 		XMLConfiguration config = new XMLConfiguration(this.getClass().getClassLoader().getResource("multi.xml"));
+		System.out.println(config.getMaxIndex("databases.database"));
+	}
+	
+	@Test
+	public void testOther2() throws ConfigurationException {
+		XMLConfiguration config = new XMLConfiguration(this.getClass().getClassLoader().getResource("multi.xml"));
 		
 		NodeList list = config.getDocument().getElementsByTagName("database") ;
 		System.out.println(list.getLength());
 		for(int i = 0; i < list.getLength(); i++) {
-			NodeList nodes = list.item(i).getChildNodes() ;
-			for (int j = 0; j < nodes.getLength(); j++) {
-				System.out.println(nodes.item(j).getTextContent());
-			}
+			System.out.println(config.getString("databases.database("+i+").name"));
+			System.out.println(config.getInt("databases.database("+i+").port"));
+			System.out.println(config.getString("databases.database("+i+").password"));
 		}
 	}
 }

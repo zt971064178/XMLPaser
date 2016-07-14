@@ -15,6 +15,13 @@
             <login>admin</login>
             <password>not-so-easy-pass</password>
         </database>
+        <database>
+            <name>production</name>
+            <url>192.23.44.100</url>
+            <port>1521</port>
+            <login>admin</login>
+            <password>not-so-easy-pass</password>
+        </database>
     </databases>
 	<person>
 		<id>10010</id>
