@@ -6,7 +6,6 @@ import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.XMLConfiguration;
 import org.apache.commons.configuration.tree.xpath.XPathExpressionEngine;
 import org.junit.Test;
-import org.w3c.dom.NodeList;
 
 public class XMLParserTest {
 
@@ -50,24 +49,12 @@ public class XMLParserTest {
 	public void testOther() throws ConfigurationException {
 		XMLConfiguration config = new XMLConfiguration(this.getClass().getClassLoader().getResource("multi.xml"));
 		int size = config.getMaxIndex("databases.database") ;
-		System.out.println(size);
 		for(int i = 0; i <= size; i++) {
-			System.out.println(config.getString("databases.database("+i+").name"));
-			System.out.println(config.getInt("databases.database("+i+").port"));
-			System.out.println(config.getString("databases.database("+i+").password"));
-		}
-	}
-	
-	@Test
-	public void testOther2() throws ConfigurationException {
-		XMLConfiguration config = new XMLConfiguration(this.getClass().getClassLoader().getResource("multi.xml"));
-		
-		NodeList list = config.getDocument().getElementsByTagName("database") ;
-		System.out.println(list.getLength());
-		for(int i = 0; i < list.getLength(); i++) {
-			System.out.println(config.getString("databases.database("+i+").name"));
-			System.out.println(config.getInt("databases.database("+i+").port"));
-			System.out.println(config.getString("databases.database("+i+").password"));
+			int length = config.getMaxIndex("databases.database("+i+").time") ;
+			for(int j = 0; j <= length; j++) {
+				System.out.println(config.getString("databases.database("+i+").time("+j+").st_date"));
+				System.out.println(config.getString("databases.database("+i+").time("+j+").ed_date"));
+			}
 		}
 	}
 }

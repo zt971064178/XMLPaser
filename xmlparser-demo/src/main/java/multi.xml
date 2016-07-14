@@ -7,6 +7,10 @@
             <port>1521</port>
             <login>admin</login>
             <password>pass</password>
+            <time>
+	          	<st_date>2015-05-08</st_date>
+          		<ed_date>2016-06-08</ed_date>
+          	</time>
         </database>
         <database>
             <name>production</name>
@@ -14,13 +18,10 @@
             <port>1521</port>
             <login>admin</login>
             <password>not-so-easy-pass</password>
-        </database>
-        <database>
-            <name>production</name>
-            <url>192.23.44.100</url>
-            <port>1521</port>
-            <login>admin</login>
-            <password>not-so-easy-pass</password>
+            <time>
+	        	<st_date>2016-06-08</st_date>
+	          	<ed_date>2016-06-08</ed_date>
+            </time>
         </database>
     </databases>
 	<person>
