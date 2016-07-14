@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <databases>
+        <database>
+            <name>dev</name>
+            <url>127.0.0.1</url>
+            <port>1521</port>
+            <login>admin</login>
+            <password>pass</password>
+        </database>
+        <database>
+            <name>production</name>
+            <url>192.23.44.100</url>
+            <port>1521</port>
+            <login>admin</login>
+            <password>not-so-easy-pass</password>
+        </database>
+    </databases>
+	<person>
+		<id>10010</id>
+		<name>张三</name>
+		<address>上海</address>
+		<address>北京</address>
+		<info  time="2014年5月"  count="100" >内容部分测试1</info>
+		<info  time="2014年6月"  count="200" >内容部分测试2</info>
+		<info  time="2014年7月"  count="300" >内容部分测试3</info>
+	</person>
+</config>
